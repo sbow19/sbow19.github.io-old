@@ -5,13 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Resume</title>
     <!-- New font -->
-     <link rel="stylesheet" href="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <!--Styles-->
     <link rel="stylesheet" href="./styles/site_styles.css"/>
 
     <!--JavaScript-->
-    <script src="./javascript/" defer></script>
+    <script src="./javascript/fade-in.js" defer></script>
+    <script src="./javascript/carousel.js" defer></script>
 </head>
 <body>
     <!--Title content-->
@@ -21,13 +24,13 @@
             <h2>Software Developer Resume<h2>
         </div>
         <div class="site-description">
-            <p>Thank you for taking the time to check out my cv. Find out a little about me, my experience in programming, and some projects I have worked on.</p>
+            <p>Determined to start my journey to become a software developer.</p>
         </div>
     </header>
     <!--Resume info-->
     <main>
         <!--About me section-->
-        <section class="about-me-container">
+        <section class="about-me-container content-container">
             <div class="profile-img-wrapper">
                 <img alt="Sam Bowditch" src="./assets/Screenshot 2024-03-05 150356.png"/> <!-- Must be of proper resolution for screen size-->
             </div>
@@ -60,7 +63,7 @@
             </div>
         </section>
         <!--Skills section-->
-        <section class="my-skills-container">
+        <section class="my-skills-container content-container">
             <div class="my-skills-title">
                 <h2>Skills</h2>    
             </div>
@@ -68,35 +71,35 @@
                 <ul class="skills-list-container">
                     <li class="skill-container">
                         <h3>Programming languages: </h3>
-                        <p>JavaScript/TypeScript (intermediate level), Python (intermediate level)</p>
+                        <p>Proficient in <strong>JavaScript</strong> and <strong>TypeScript</strong> (intermediate level), with experience in <strong>Python</strong> (intermediate level).</p>
                     </li>
                     <li class="skill-container">
-                        <h3>Web Technologies:</h3>
-                        <p>HTML5, CSS3</p>
+                        <h3>Web technologies:</h3>
+                        <p>Skilled in creating responsive and accessible web pages using <strong>HTML5</strong> and <strong>CSS3</strong>.</p>
                     </li>
                     <li class="skill-container">
                         <h3>Frameworks:</h3>
-                        <p>React, React Native (basic to intermediate level) </p>
+                        <p>Experience in building developing a dynamic mobile application using <strong>React Native</strong> (basic to intermediate level). </p>
                     </li>
                     <li class="skill-container">
-                        <h3>Other Technologies:</h3>
-                        <p> Git, SQLite and MySQL, RESTful APIs, NodeJs, VSCode</p>
+                        <h3>Other technologies:</h3>
+                        <p> Knowledgeable in version control with <strong>Git</strong>, managing databases with <strong>SQLite</strong> and <strong>MySQL</strong>, designing <strong>RESTful APIs</strong>, and backend development with <strong>Node.js</strong>. Proficient in using <strong>VSCode</strong> as a development environment.</p>
                     </li>
                     <li class="skill-container">
                         <h3>Soft skills:</h3>
-                        <p>Project Management experience, attention to detail, strong team-player, creative thinker </p>
+                        <p>Proven ability in <strong>project management</strong>, keen <strong>attention to detail</strong>, strong <strong>team-player</strong> qualities, and a <strong>creative thinker</strong> capable of innovative solutions.</p>
                     </li>
                 </ul>
             </div>
 
         </section>
         <!--Projects section-->
-        <section class="my-projects-container">
+        <section class="my-projects-container content-container">
             <div class="my-projects-title">
                 <h2>Projects</h2>
             </div>
 
-            <div class="my-projects-carousel-container">
+            <div class="my-projects-carousel-container" id="carousel-container">
                 <!--Arrow icons-->
                 <img src="./assets/arrow-circle-left-svgrepo-com.svg" class="left-arrow" id="left-arrow"/>
                 <img src="./assets/arrow-circle-right-svgrepo-com.svg" class="right-arrow" id="right-arrow"/>
@@ -112,19 +115,20 @@
                         <div class="project-description">
                             <p>
                                 React Native Android app allowing users to play vocabulary flash card games.
-
+                            </br>
+                            </br>
                                 Features:
                             </p>
                             <ul class="project-list">
-                                <li>Deepl RESTful API calls</li>
-                                <li>SQLite for local storage</li>
-                                <li>Search functionality</li>
-                                <li>Flashcard game loop</li>
-                                <li>NodeJs/ExpressJs backend</li>
+                                <li><strong>Deepl RESTful API calls</strong></li>
+                                <li><strong>SQLite for local storage</strong></li>
+                                <li><strong>Search functionality</strong></li>
+                                <li><strong>Flashcard game loop</strong></li>
+                                <li><strong>NodeJs/ExpressJs backend</strong></li>
                             </ul>
 
                         </div>
-                        <a href="https://github.com/sbow19/project-name" target="_blank"
+                        <a href="https://github.com/sbow19/VocabPanda" target="_blank"
                         class="view-project-on-github">
                             <p>View on Github</p>
                             <img src="./assets/github.svg" class="social-icons"/>
@@ -140,19 +144,20 @@
                          <div class="project-description">
                             <p>
                                 Chrome Extension allowing users to translate and foreign text on websites.
-
+                            </br>
+                            </br>
                                 Features:
                             </p>
                             <ul class="project-list">
-                                <li>Chrome API</li>
-                                <li>JavaScript, HTML, and CSS</li>
-                                <li>IndexedDB for data persistance</li>
-                                <li>DOM interactivity</li>
-                                <li>Deepl RESTful API calls</li>
+                                <li><strong>Chrome API</strong></li>
+                                <li><strong>JavaScript, HTML, and CSS</strong></li>
+                                <li><strong>IndexedDB for data persistance</strong></li>
+                                <li><strong>DOM interactivity</strong></li>
+                                <li><strong>Deepl RESTful API calls</strong></li>
                             </ul>
 
                         </div>
-                        <a href="https://github.com/sbow19/project-name" target="_blank" class="view-project-on-github">
+                        <a href="https://github.com/sbow19/vocab-tracker-extension" target="_blank" class="view-project-on-github">
                             <p>View on Github</p>
                             <img src="./assets/github.svg" class="social-icons"/>
                         </a>
@@ -168,24 +173,25 @@
                         <div class="project-description">
                             <p>
                                 Tkinter GUI to query a custom SQLite database containing millions of rows of data.
-
+                            </br>
+                        </br>
                                 Features:
                             </p>
                             <ul class="project-list">
-                                <li>SQLite using Python</li>
-                                <li>Ingestion and data cleaning</li>
-                                <li>Flexible search functionality</li>
-                                <li>Database indexing</li>
-                                <li>RESTful API queries</li>
-                                <li>Plotly Gantt charts for visualisation</li>
+                                <li><strong>SQLite using Python</strong></li>
+                                <li><strong>Ingestion and data cleaning</strong></li>
+                                <li><strong>Flexible search functionality</strong></li>
+                                <li><strong>Database indexing</strong></li>
+                                <li><strong>RESTful API queries</strong></li>
+                                <li><strong>Plotly Gantt charts for visualisation</strong></li>
                             </ul>
 
                         </div>
-                        <a href="https://github.com/sbow19/project-name" target="_blank"
+                        <!-- <a href="https://github.com/sbow19/project-name" target="_blank"
                         class="view-project-on-github">
                             <p>View on Github</p>
                             <img src="./assets/github.svg" class="social-icons"/>
-                        </a>
+                        </a> -->
                     </div>
                 </article>
                 <article class="slide-container slide-four">
@@ -197,22 +203,23 @@
                         <div class="project-description">
                             <p>
                                 MHTML parser implemented in Python to parse website screenshots and output data to report templates.
-
+                            </br>
+                            </br>
                                 Features:
                             </p>
                             <ul class="project-list">
-                                <li>Python class and module implementations</li>
-                                <li>Custom scripts for seven highly queried sites</li>
-                                <li>PyExcel library to write to templates</li>
-                                <li>BeautifulSoup library for parsing MHTML</li>
+                                <li><strong>Python class and module implementations</strong></li>
+                                <li><strong>Custom scripts for seven highly queried sites</strong></li>
+                                <li><strong>PyExcel library to write to templates</strong></li>
+                                <li><strong>BeautifulSoup library for parsing MHTML</strong></li>
                             </ul>
 
                         </div>
-                        <a href="https://github.com/sbow19/project-name" target="_blank"
+                        <!-- <a href="https://github.com/sbow19/project-name" target="_blank"
                         class="view-project-on-github">
                             <p>View on Github</p>
                             <img src="./assets/github.svg" class="social-icons"/>
-                        </a>
+                        </a> -->
                     </div>
                 </article>
             </div>
@@ -220,7 +227,7 @@
             <!-- See more section to add, depending on no of projects <div></div> -->
         </section>
         <!--Contact details-->
-        <aside class="contacts-aside-container">
+        <aside class="contacts-aside-container content-container">
             <div class="contacts-title">
                 <h2>Contacts</h2>
             </div>
